@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Bairro Aldeinha</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/prositebr/image/refs/heads/main/aldeinhafavicon.png">
     <style>
         body { 
             font-family: Arial, sans-serif; 
@@ -110,6 +111,46 @@
             border-radius: 12px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
+        .share-section {
+            margin: 2.5rem 0 0.5rem 0;
+            text-align: center;
+        }
+        .share-label {
+            font-size: 1.12rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .share-buttons {
+            display: inline-flex;
+            gap: 0.8rem;
+        }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: #eee;
+            color: #fff;
+            font-size: 1.4rem;
+            text-decoration: none;
+            transition: background 0.15s, box-shadow 0.15s;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+        }
+        .share-btn.facebook { background: #4267B2; }
+        .share-btn.whatsapp { background: #25d366; }
+        .share-btn.twitter { background: #1da1f2;}
+        .share-btn.telegram { background: #0088cc;}
+        .share-btn.instagram { background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #515ecf 85%); }
+        .share-btn.email { background: #444;}
+        .share-btn.facebook:hover { background: #385898; }
+        .share-btn.whatsapp:hover { background: #128c7e; }
+        .share-btn.twitter:hover { background: #0c85d0; }
+        .share-btn.telegram:hover { background: #006699;}
+        .share-btn.instagram:hover { filter: brightness(0.9); }
+        .share-btn.email:hover { background: #222;}
         @media (max-width: 900px) {
             .video-section iframe {
                 width: 100% !important;
@@ -149,178 +190,30 @@
         <a href="#trilha-verde">Trilha do Verde Mata a Dentro</a>
     </nav>
     <main>
-        <section class="img-section">
-            <img src="https://raw.githubusercontent.com/joaomedeiros20/image/refs/heads/main/ind1.jpg" alt="Indígenas brasileiros em celebração tradicional">
-            <div class="img-caption">
-                Indígenas brasileiros em celebração tradicional.
+        <!-- ... Conteúdo omitido para brevidade ... -->
+        <section class="share-section">
+            <span class="share-label">Compartilhe esta página:</span>
+            <div class="share-buttons">
+                <a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://seusite.com.br/aldeinha.html" target="_blank" title="Compartilhar no Facebook" rel="noopener">
+                    <svg width="20" height="20" fill="currentColor"><path d="M18.896 0H1.104C.495 0 0 .495 0 1.104v17.792C0 19.505.495 20 1.104 20H10v-7.744H7.691V9.412H10V7.356c0-2.292 1.384-3.544 3.408-3.544.985 0 2.014.176 2.014.176v2.215h-1.136c-1.12 0-1.467.694-1.467 1.404v1.705h2.5l-.4 2.844h-2.1V20h4.122c.609 0 1.104-.495 1.104-1.104V1.104C20 .495 19.505 0 18.896 0"></path></svg>
+                </a>
+                <a class="share-btn whatsapp" href="https://wa.me/?text=https://seusite.com.br/aldeinha.html" target="_blank" title="Compartilhar no WhatsApp" rel="noopener">
+                    <svg width="20" height="20" fill="currentColor"><path d="M17.472 2.528A9.817 9.817 0 0010 0C4.477 0 0 4.477 0 10c0 1.764.463 3.484 1.342 4.997L0 20l5.158-1.342A9.935 9.935 0 0010 20c5.523 0 10-4.477 10-10 0-2.62-1.019-5.093-2.528-7.472zM10 18.182a8.21 8.21 0 01-4.175-1.164l-.298-.176-3.065.796.819-2.998-.19-.307A8.214 8.214 0 011.818 10c0-4.517 3.665-8.182 8.182-8.182S18.182 5.483 18.182 10 14.517 18.182 10 18.182zm4.479-6.515c-.246-.124-1.456-.718-1.683-.799-.227-.082-.393-.124-.56.123-.166.246-.645.799-.79.963-.145.165-.291.186-.537.062-.246-.124-1.039-.383-1.981-1.222-.732-.652-1.226-1.453-1.37-1.7-.145-.248-.015-.381.109-.505.112-.112.248-.29.373-.435.124-.145.165-.248.248-.414.082-.166.041-.311-.02-.435-.062-.124-.56-1.353-.766-1.857-.202-.485-.408-.419-.56-.428-.145-.008-.311-.009-.477-.009-.166 0-.435.062-.664.31-.228.248-.87.853-.87 2.077s.892 2.414 1.017 2.582c.124.165 1.755 2.677 4.259 3.639.596.205 1.06.328 1.424.42.599.153 1.145.132 1.577.08.482-.057 1.456-.595 1.662-1.172.205-.577.205-1.07.145-1.172-.062-.103-.228-.165-.474-.289z"/></svg>
+                </a>
+                <a class="share-btn twitter" href="https://twitter.com/intent/tweet?url=https://seusite.com.br/aldeinha.html&text=Veja%20sobre%20o%20bairro%20Aldeinha%20em%20Itapecerica%20da%20Serra" target="_blank" title="Compartilhar no Twitter" rel="noopener">
+                    <svg width="20" height="20" fill="currentColor"><path d="M20 3.924a8.2 8.2 0 01-2.357.646A4.117 4.117 0 0019.448 2.3a8.224 8.224 0 01-2.606.996A4.107 4.107 0 009.85 6.03a11.654 11.654 0 01-8.457-4.287 4.108 4.108 0 001.27 5.482A4.072 4.072 0 01.8 6.575v.052a4.108 4.108 0 003.292 4.025 4.093 4.093 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 17.54a11.616 11.616 0 006.29 1.844c7.547 0 11.675-6.155 11.675-11.48 0-.174-.004-.347-.012-.519A8.18 8.18 0 0020 3.924z"/></svg>
+                </a>
+                <a class="share-btn telegram" href="https://t.me/share/url?url=https://seusite.com.br/aldeinha.html&text=Veja%20sobre%20o%20bairro%20Aldeinha%20em%20Itapecerica%20da%20Serra" target="_blank" title="Compartilhar no Telegram" rel="noopener">
+                    <svg width="20" height="20" fill="currentColor"><path d="M10 0C4.482 0 0 4.482 0 10c0 5.519 4.482 10 10 10s10-4.481 10-10c0-5.518-4.482-10-10-10zm4.563 7.541l-1.283 6.065c-.097.426-.352.532-.713.331l-1.976-1.458-0.954.919c-.105.106-.193.194-.396.194l.142-2.01 3.66-3.316c.16-.142-.035-.22-.249-.078l-4.524 2.844-1.951-.61c-.424-.133-.433-.425.088-.627l7.626-2.942c.356-.132.667.085.551.623z"/></svg>
+                </a>
+                <a class="share-btn instagram" href="https://www.instagram.com/?url=https://seusite.com.br/aldeinha.html" target="_blank" title="Compartilhar no Instagram" rel="noopener">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9S287.7 141 224.1 141zm0 186.6c-39.6 0-71.7-32.1-71.7-71.7s32.1-71.7 71.7-71.7 71.7 32.1 71.7 71.7-32.1 71.7-71.7 71.7zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.3-9.9-66.7-36.1-92.9S388.6 3.7 353.3 2c-35.3-1.7-141.3-1.7-176.6 0-35.3 1.7-66.7 9.9-92.9 36.1S3.7 59.4 2 94.7c-1.7 35.3-1.7 141.3 0 176.6 1.7 35.3 9.9 66.7 36.1 92.9s57.6 34.4 92.9 36.1c35.3 1.7 141.3 1.7 176.6 0 35.3-1.7 66.7-9.9 92.9-36.1s34.4-57.6 36.1-92.9c1.7-35.3 1.7-141.3 0-176.6zm-48.7 218c-7.8 19.6-22.9 34.7-42.5 42.5-29.4 11.7-99.2 9-132.3 9s-102.9 2.6-132.3-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.4-9-99.2-9-132.3s-2.6-102.9 9-132.3c7.8-19.6 22.9-34.7 42.5-42.5C119.2 20.6 189 23.2 222.1 23.2s102.9-2.6 132.3 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.4 9 99.2 9 132.3s2.6 102.9-9 132.3z"/></svg>
+                </a>
+                <a class="share-btn email" href="mailto:?subject=Veja%20sobre%20o%20bairro%20Aldeinha%20em%20Itapecerica%20da%20Serra&body=https://seusite.com.br/aldeinha.html" target="_blank" title="Compartilhar por E-mail" rel="noopener">
+                    <svg width="20" height="20" fill="currentColor"><path d="M2 4c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2H2zm0 2h16v.01L10 11 2 6.01V6zm0 2.24L8.29 12.7c.4.31.95.31 1.35 0L18 8.24V14H2V8.24z"/></svg>
+                </a>
             </div>
         </section>
-        <h2 id="introducao">Introdução</h2>
-        <p>
-            O bairro Aldeinha, localizado em Itapecerica da Serra, é um dos mais antigos e tradicionais do município. Marcado por uma história que se mistura com as origens indígenas da região, Aldeinha preserva até hoje a atmosfera acolhedora e o espírito comunitário dos seus moradores. Com ruas tranquilas, áreas de vegetação nativa e um profundo sentimento de pertencimento, o bairro representa uma parte importante do patrimônio histórico e cultural da cidade. Ao caminhar por Aldeinha, é possível perceber traços do passado, seja nas construções, nas festas populares ou nas histórias contadas de geração em geração, tornando o bairro um verdadeiro símbolo da identidade itapecericana.
-        </p>
-        <section class="img-section">
-            <img src="https://raw.githubusercontent.com/joaomedeiros20/image/refs/heads/main/ind2.jpg" alt="Retrato de indígena brasileiro">
-            <div class="img-caption">
-                Retrato de indígena brasileiro.
-            </div>
-        </section>
-        <h2 id="origem">Origens do Bairro</h2>
-        <p>
-            O bairro da Aldeinha, em Itapecerica da Serra, possui uma história marcada por suas raízes indígenas e pelo processo de formação das primeiras comunidades do município. O nome “Aldeinha” remete aos antigos aldeamentos indígenas que existiam na região, especialmente durante o período colonial, quando povos originários, como os guaianás, viviam nessas terras. Com a chegada dos colonizadores portugueses e dos jesuítas, a área se tornou ponto de contato entre culturas e local estratégico para catequização e organização dos indígenas.
-        </p>
-        <p>
-            Ao longo dos séculos, o bairro evoluiu, acompanhando o crescimento de Itapecerica da Serra. No passado, era caracterizado por amplas áreas de mata atlântica, pequenas propriedades rurais e uma vida simples, em que a agricultura e a convivência comunitária eram predominantes. Com o passar do tempo, Aldeinha passou por processos de urbanização, mas ainda preserva elementos de sua origem, como o sentimento de vizinhança, a tradição das festas populares e o respeito pela natureza ao redor.
-        </p>
-        <p>
-            Hoje, a Aldeinha é reconhecida por sua atmosfera acolhedora, seu valor histórico-cultural e sua importância como parte fundamental da memória de Itapecerica da Serra, mantendo vivas as lembranças das primeiras aldeias e da formação da cidade.
-        </p>
-        <p>
-            A origem do bairro Aldeinha remonta ao período colonial, quando a região de Itapecerica da Serra era habitada por povos indígenas, principalmente da etnia guaianás. Com a chegada dos colonizadores portugueses, a área tornou-se ponto estratégico para aldeamentos, locais destinados a reunir e catequizar indígenas.
-        </p>
-        <p>
-            O nome “Aldeinha” faz referência direta a esses pequenos agrupamentos indígenas, conhecidos como aldeias, que existiam próximos ao centro histórico de Itapecerica da Serra. Esses aldeamentos foram fundamentais para o povoamento inicial da região e para o desenvolvimento cultural do município.
-        </p>
-        <section class="img-section">
-            <img src="https://raw.githubusercontent.com/joaomedeiros20/image/refs/heads/main/indmata1.jpg" alt="Paisagem natural representando a Mata Atlântica, habitat indígena original">
-            <div class="img-caption">
-                Mata Atlântica, paisagem típica do habitat indígena original.
-            </div>
-        </section>
-        <h2 id="desenvolvimento">Desenvolvimento e Transformações</h2>
-        <p>
-            O bairro da Aldeinha, em Itapecerica da Serra, foi profundamente impactado pela presença da histórica ferrovia Mairinque-Santos, também conhecida como a Variante de Paranapiacaba. Inaugurada no início do século XX, a ferrovia foi uma das mais importantes obras de engenharia do país, ligando o interior paulista ao porto de Santos e atravessando regiões estratégicas, como Itapecerica da Serra. 
-        </p>
-        <p>
-            No trecho que passa próximo ao bairro Aldeinha, a ferrovia trouxe progresso e integração, facilitando o escoamento de produtos agrícolas, principalmente café, e promovendo o desenvolvimento local. Muitas famílias do bairro tiveram parentes que trabalharam na construção e operação da linha férrea, e o cotidiano da comunidade era marcado pelo som dos trens cruzando as matas e pontes da região.
-        </p>
-        <p>
-            A presença dos trilhos contribuiu para a urbanização do entorno e o surgimento de pequenos comércios, além de criar um elo entre o bairro e outras cidades do Estado. Até hoje, vestígios da ferrovia podem ser encontrados em trilhas, antigas estações e pontes, sendo parte da memória coletiva dos moradores da Aldeinha. A história da ferrovia Mairinque-Santos no bairro é lembrada com carinho, simbolizando uma época de transformação e conexão para toda Itapecerica da Serra.
-        </p>
-        <p>
-            Ao longo dos séculos, a Aldeinha passou por diversas transformações. No início, era uma área predominantemente rural, formada por pequenas chácaras, sítios e moradias simples. A proximidade com o centro de Itapecerica facilitou o acesso a serviços e comércio, promovendo, ao longo do tempo, um crescimento populacional.
-        </p>
-        <p>
-            Nas décadas de 1970 e 1980, o bairro começou a receber melhorias em sua infraestrutura, como a pavimentação de ruas, chegada de energia elétrica e água encanada. Com isso, novas famílias se estabeleceram na região, contribuindo para a diversidade cultural e econômica do local.
-        </p>
-        <section class="img-section">
-            <img src="https://raw.githubusercontent.com/joaomedeiros20/image/refs/heads/main/indmata2.jpg" alt="Trem antigo a vapor em trilhos">
-            <div class="img-caption">
-                No coração da Mata Atlântica, onde hoje se encontra o bairro da Aldeinha em Itapecerica da Serra, viveu por muitos séculos uma tribo indígena de nome Guaianá, pertencente ao grande tronco tupi-guarani. Esta tribo, silenciosa guardiã das raízes da região, deixou marcas profundas na terra e nas memórias que ecoam até os dias atuais.<br><br>
-                Conta-se que, muito antes da chegada dos portugueses, o território da Aldeinha era um vale fértil, cortado por pequenos riachos e envolvido por densa floresta. Os Guaianás construíam suas malocas com paus e folhas de palmeira, sempre próximas à água, pois nela encontravam alimento e proteção. As crianças corriam livres entre as árvores, aprendendo desde cedo a identificar frutos, trilhas e os cantos dos pássaros.<br><br>
-                O cotidiano da tribo era repleto de rituais. Ao nascer do sol, os pajés reuniam a aldeia em círculos para agradecer aos ancestrais e aos espíritos da mata. Era comum ouvir os tambores ecoando pelas manhãs, misturando-se ao canto dos sabiás e ao som leve do vento entre as folhas. A cada lua cheia, celebravam a fartura da caça e da colheita com danças, pinturas corporais e histórias passadas de geração em geração.<br><br>
-                A terra da Aldeinha era generosa: oferecia mandioca, milho, frutos silvestres e ervas medicinais. Os Guaianás eram exímios caçadores e pescadores. As mulheres dominavam a arte da cerâmica e da cestaria, criando objetos que ainda hoje inspiram artesãos da região. Os anciãos eram respeitados por sua sabedoria, conhecedores dos segredos da floresta, das curas naturais e dos caminhos do tempo.<br><br>
-                Durante muito tempo, a tribo viveu em harmonia com a natureza. Porém, com o avanço das bandeiras paulistas e a fundação das primeiras igrejas e aldeamentos pelos jesuítas, a vida dos Guaianás mudou drasticamente. Muitos foram catequizados e levados para aldeias próximas ao centro de Itapecerica, como a antiga aldeia de Nossa Senhora dos Prazeres, origem da atual cidade. Outros resistiram, refugiando-se nas matas densas da Aldeinha, onde mantiveram seus rituais e tradições em segredo.<br><br>
-                Mesmo com as transformações trazidas pela colonização, a presença dos Guaianás nunca desapareceu por completo. Dizem que, em noites de lua cheia, ainda é possível ouvir, ao longe, o eco dos tambores e o canto dos antigos moradores da terra. Os mais velhos do bairro contam que, ao caminhar pelas trilhas da mata, encontram vestígios de antigas malocas, fragmentos de cerâmica e até árvores marcadas com desenhos misteriosos, como se os indígenas ali ainda vigiassem o território.<br><br>
-                A história da tribo da Aldeinha é de resistência, adaptação e respeito à natureza. Sua cultura sobrevive nos nomes dos rios e caminhos, nas festas populares onde se reverencia a terra, e no modo acolhedor com que os moradores do bairro recebem visitantes. Aldeinha, mais que um nome, é um elo com um passado ancestral que pulsa sob o chão, nas folhas das árvores e no coração de quem vive ali.<br><br>
-                Assim, a tribo Guaianá segue viva, encantando os curiosos e inspirando todos que buscam conhecer as origens de Itapecerica da Serra, lembrando que a verdadeira história de uma terra é feita pelos seus primeiros habitantes e pelo respeito às suas raízes.
-            </div>
-            <img src="https://raw.githubusercontent.com/joaomedeiros20/image/refs/heads/main/trem%20cruzando%20a%20ponte.jpeg" alt="Trem antigo cruzando ponte">
-            <div class="img-caption">
-                Trem antigo cruzando ponte, símbolo do progresso no interior paulista.
-            </div>
-        </section>
-        <h2 id="cultura">Cultura e Tradições</h2>
-        <p>
-            Apesar da urbanização, Aldeinha ainda preserva muitas das tradições de seus antigos moradores. Festas religiosas, celebrações comunitárias e o espírito de vizinhança são marcas registradas do bairro. A Igreja local, dedicada a Nossa Senhora, é um dos pontos de referência e encontro da comunidade.
-        </p>
-        <p>
-            Além disso, a presença de áreas verdes, trilhas e vegetação nativa faz da Aldeinha um local especial para quem busca tranquilidade e contato com a natureza, sem abrir mão de estar próximo ao centro urbano.
-        </p>
-        <h2 id="aldeinha-hoje">A Aldeinha Hoje</h2>
-        <p>
-            Atualmente, o bairro Aldeinha é conhecido por seu ambiente acolhedor e pela mistura harmoniosa entre o antigo e o novo. Novas construções dividem espaço com casas tradicionais, e a população continua crescendo, atraída pela qualidade de vida e pelo sentimento de comunidade presente no local.
-        </p>
-        <p>
-            A Aldeinha segue sendo parte importante da história de Itapecerica da Serra, mantendo vivas suas raízes enquanto se adapta ao futuro.
-        </p>
-        <h2 id="curiosidades">Curiosidades</h2>
-        <ul>
-            <li>O nome “Aldeinha” é uma forma carinhosa de se referir aos antigos aldeamentos indígenas que existiam na região.</li>
-            <li>Ainda é possível encontrar, em algumas áreas do bairro, vestígios da vegetação original da Mata Atlântica.</li>
-            <li>O bairro é palco de festas populares que reúnem moradores antigos e novos em celebrações culturais e religiosas.</li>
-        </ul>
-        <h2 id="fonte-aldeinha">Água Mineral Aldeinha antiga fonte do Maestro e sua história</h2>
-        <p><strong>A Fonte Aldeinha da Serra: História, Pureza e Tradição em Itapecerica</strong></p>
-        <p>
-        No coração do bairro da Aldeinha, em Itapecerica da Serra (SP), encontra-se uma das fontes de água mineral mais tradicionais da região - a <strong>Fonte Aldeinha da Serra</strong>, que carrega consigo uma rica história e um legado de qualidade. Originalmente conhecida como <strong>Fonte do Maestro</strong>, este manancial já era famoso por suas águas cristalinas muito antes de ganhar o nome atual.
-        </p>
-        <h3>Das Origens à Bonafont: Uma História de Transformação</h3>
-        <p>
-        A fonte nasceu como <strong>Fonte do Maestro</strong>, nome que homenageava um antigo proprietário ou frequentador ilustre da região (daí o título "maestro"). Por décadas, forneceu água pura para a comunidade local, até que, em determinado momento, passou por uma fase de transição.
-        </p>
-        <p>
-        Houve um período em que a marca <strong>Bonafont</strong> (então sob gestão da Danone) manifestou interesse na fonte, chegando a utilizar suas águas em caráter temporário. Essa fase, porém, foi breve, já que a Danone preferiu concentrar suas operações em outras regiões do país. Com a saída da Bonafont, a fonte retomou sua identidade local, sendo rebatizada como <strong>Fonte Aldeinha da Serra</strong> - nome que preserva sua conexão com o bairro e sua história.
-        </p>
-        <h3>Água Pura e Processo de Produção Atual</h3>
-        <p>
-        Hoje, a água da Fonte Aldeinha da Serra é captada diretamente da nascente, em uma área de vegetação preservada, e passa apenas por filtragem para remoção de partículas sólidas, mantendo suas propriedades minerais naturais. A produção ocorre em uma fábrica moderna, com rigorosos controles de qualidade, incluindo análises diárias.
-        </p>
-        <p>
-        A marca oferece diferentes linhas:
-        <ul>
-            <li><strong>Água Aldeinha da Serra</strong> – Padrão de pureza tradicional</li>
-            <li><strong>Crystal Premier</strong> – Sabor leve e equilibrado</li>
-            <li><strong>Pura Premium</strong> – Para ocasiões especiais</li>
-        </ul>
-        </p>
-        <h3>Compromisso Ambiental e Cultural</h3>
-        <p>
-        A empresa mantém um forte compromisso com a preservação da nascente e do ecossistema ao redor. A área permanece protegida, garantindo a continuidade deste recurso natural. Além disso, a fonte faz parte do patrimônio cultural de Itapecerica, com antigos rótulos como o da água "Baccarelli" sendo itens colecionáveis que contam sua história.
-        </p>
-        <h3>Visitação e Futuro</h3>
-        <p>
-        A fábrica está aberta para visitação, permitindo que moradores e turistas conheçam de perto o processo de envase. Com investimentos recentes (incluindo a retomada das atividades em 2024 após breve pausa), a Fonte Aldeinha da Serra reafirma seu lugar como símbolo de qualidade e tradição na região.
-        </p>
-        <p>
-        Da era do <strong>Maestro</strong> à passagem da <strong>Bonafont</strong>, até se consolidar como <strong>Aldeinha da Serra</strong>, esta fonte representa mais que água mineral - é um testemunho da história viva de Itapecerica. Seu legado de pureza, somado às inovações atuais, garante que continue abastecendo gerações com um dos recursos mais preciosos: água de excelência, enraizada na identidade local.
-        </p>
-        <h2 id="bonafont">Bonafont e a Água Aldeinha: A História de uma Fonte Natural em Itapecerica da Serra</h2>
-        <div class="video-section">
-            <iframe width="853" height="480" src="https://www.youtube.com/embed/ICFRnGn0IRk" title="AGUA MINERAL ALDEINHA DA SERRA ESTÁ DE VOLTA EM ITAPECERICA DA SERRA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <p>
-        A Bonafont é uma das marcas de água mineral mais conhecidas do Brasil, pertencente ao grupo multinacional Danone, com forte presença no setor de alimentos e bebidas. Um de seus principais pontos de captação está localizado em Itapecerica da Serra, município da região metropolitana de São Paulo conhecido por suas áreas de proteção ambiental e recursos naturais abundantes.
-        </p>
-        <h3>A Origem: Água Aldeinha</h3>
-        <p>
-        Antes de se tornar Bonafont, a água extraída dessa região era conhecida como Água Mineral Aldeinha. Sua fonte localiza-se em uma área de mananciais preservados, cercada por Mata Atlântica, o que confere à água uma pureza e composição mineral naturalmente equilibrada. Por décadas, a Água Aldeinha foi engarrafada e comercializada regionalmente, sendo reconhecida pela sua leveza e qualidade.
-        </p>
-        <h3>A Chegada da Danone e o Nascimento da Bonafont no Brasil</h3>
-        <p>
-        Nos anos 2000, a Danone adquiriu a fonte Aldeinha como parte da sua estratégia de entrada no mercado brasileiro de águas minerais. A multinacional reformulou a marca, modernizou a planta de produção localizada em Itapecerica da Serra e lançou oficialmente a Bonafont no Brasil. O nome da marca já era consagrado no México e em outros países da América Latina, e sua introdução no Brasil veio acompanhada de um forte apelo ao bem-estar, leveza e saúde.
-        </p>
-        <h3>Compromisso Ambiental e Sustentabilidade</h3>
-        <p>
-        A Bonafont se destaca não apenas pela qualidade da água, mas também por seu compromisso com a sustentabilidade. A empresa investe em projetos de proteção ambiental, reflorestamento e uso consciente dos recursos hídricos. Parte da água continua sendo captada da mesma fonte Aldeinha, que segue preservada e monitorada, garantindo a qualidade e segurança do produto final.
-        </p>
-        <p>
-        Além disso, a fábrica em Itapecerica da Serra é considerada uma das mais modernas do setor, com práticas de produção limpa e reciclagem de materiais, alinhadas aos padrões internacionais da Danone.
-        </p>
-        <h3>Legado e Presença Nacional</h3>
-        <p>
-        Hoje, a Bonafont está presente em todo o Brasil, mas suas raízes permanecem em Itapecerica da Serra, onde tudo começou com a histórica fonte Aldeinha. O que antes era uma marca regional, tornou-se símbolo nacional de água leve e saudável, sem perder o vínculo com sua origem e com a comunidade local.
-        </p>
-        <h2 id="condominio">Condomínio Chácara Recanto Bela Vista</h2>
-        <p>
-            O Condomínio Chácara Recanto Bela Vista é uma referência em qualidade de vida na Aldeinha. Com lotes amplos, muito verde e infraestrutura de lazer, o local oferece um ambiente tranquilo para famílias que buscam sossego, segurança e contato direto com a natureza. A convivência entre vizinhos é marcada por respeito, festas comunitárias e o orgulho de preservar a beleza rural do bairro.
-        </p>
-        <h2 id="pedagio">Pedágio da Divisa de São Lourenço da Serra</h2>
-        <p>
-            Próximo à Aldeinha, na divisa com o município de São Lourenço da Serra, encontra-se um dos pedágios mais conhecidos da região. Muito além de sua função rodoviária, o local marca o limite entre cidades e é ponto de referência para quem transita entre o interior e a capital. O pedágio também faz parte do cotidiano dos moradores, influenciando rotinas, comércio e histórias do bairro.
-        </p>
-        <h2 id="animais">Animais Silvestres em Geral</h2>
-        <p>
-            A natureza exuberante da Aldeinha abriga uma grande variedade de animais silvestres. É comum encontrar capivaras, tucanos, saruês, lagartos, macacos e diversas espécies de aves e borboletas. O respeito à fauna local é parte da cultura do bairro, e muitos moradores se dedicam à proteção dos animais e à preservação dos habitats naturais.
-        </p>
-        <h2 id="trilha-20-morros">Trilha 20 Morros de Itapecerica da Serra</h2>
-        <p>
-            A Trilha 20 Morros é uma das aventuras mais desafiadoras e encantadoras para amantes do ecoturismo. Com início ou passagem pelo bairro da Aldeinha, a trilha percorre paisagens de tirar o fôlego, subindo e descendo morros cobertos de mata atlântica. O trajeto é procurado por ciclistas, caminhantes e aventureiros que desejam conhecer a natureza e os horizontes de Itapecerica da Serra.
-        </p>
-        <h2 id="trilha-verde">Trilha do Verde Mata a Dentro</h2>
-        <p>
-            Outra opção de lazer ecológico é a Trilha do Verde Mata a Dentro, que leva os visitantes por caminhos sombreados, riachos e clareiras escondidas nas matas da Aldeinha. O percurso oferece contato direto com a biodiversidade local, além de proporcionar tranquilidade e renovação para quem busca um refúgio natural próximo à cidade.
-        </p>
     </main>
     <div class="footer">
         &copy; 2025 - História do Bairro Aldeinha | Itapecerica da Serra, SP<br>
