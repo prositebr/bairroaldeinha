@@ -101,10 +101,30 @@
             color: #666;
             margin-bottom: 1.5rem;
         }
+        .video-section {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        .video-section iframe {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        @media (max-width: 900px) {
+            .video-section iframe {
+                width: 100% !important;
+                height: 240px !important;
+                max-width: 100%;
+            }
+        }
         @media (max-width: 600px) {
             main { padding: 1rem; }
             h1 { font-size: 2rem; }
             nav.menu { flex-direction: column; gap: 0.3rem; }
+            .video-section iframe {
+                width: 100% !important;
+                height: 190px !important;
+            }
         }
     </style>
 </head>
@@ -256,6 +276,9 @@
         Da era do <strong>Maestro</strong> à passagem da <strong>Bonafont</strong>, até se consolidar como <strong>Aldeinha da Serra</strong>, esta fonte representa mais que água mineral - é um testemunho da história viva de Itapecerica. Seu legado de pureza, somado às inovações atuais, garante que continue abastecendo gerações com um dos recursos mais preciosos: água de excelência, enraizada na identidade local.
         </p>
         <h2 id="bonafont">Bonafont e a Água Aldeinha: A História de uma Fonte Natural em Itapecerica da Serra</h2>
+        <div class="video-section">
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/ICFRnGn0IRk" title="AGUA MINERAL ALDEINHA DA SERRA ESTÁ DE VOLTA EM ITAPECERICA DA SERRA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
         <p>
         A Bonafont é uma das marcas de água mineral mais conhecidas do Brasil, pertencente ao grupo multinacional Danone, com forte presença no setor de alimentos e bebidas. Um de seus principais pontos de captação está localizado em Itapecerica da Serra, município da região metropolitana de São Paulo conhecido por suas áreas de proteção ambiental e recursos naturais abundantes.
         </p>
